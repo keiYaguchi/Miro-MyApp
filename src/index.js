@@ -9,7 +9,7 @@ function run() {
         librarySvgIcon: icon24,
         toolbarSvgIcon: icon24,
         onClick: () => {
-          miro.board.ui.openLibrary('content.html', {title: 'MyApp'})
+          miro.board.ui.openLeftSidebar('content.html', {title: 'MyApp'})
         },
       },
     },
