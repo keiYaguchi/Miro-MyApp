@@ -4,7 +4,7 @@ const icon24 =
 function run() {
   miro.initialize({
     extensionPoints: {
-      toolBar: {
+      toolbar: {
         title: 'MyApp',
         toolbarSvgIcon: icon24,
         onClick: () => {
