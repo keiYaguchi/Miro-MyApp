@@ -4,21 +4,12 @@ const icon24 =
 function run() {
   miro.initialize({
     extensionPoints: {
-      bottomBar: {
-        title: 'Dropper',
+      toolBar: {
+        title: 'MyApp',
         svgIcon: icon24,
         onClick: () => {
-          miro.board.ui.openLibrary('content.html', {title: 'Dropper'})
+          miro.board.ui.openLibrary('content.html', {title: 'MyApp'})
         },
-      },
-      getWidgetMenuItems: () => {
-        return Promise.resolve({
-          tooltip: 'Hi',
-          svgIcon: icon24,
-          onClick: (widgets) => {
-            console.log('onClick', widgets)
-          },
-        })
       },
     },
   })
