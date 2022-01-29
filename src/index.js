@@ -6,7 +6,7 @@ function run() {
     extensionPoints: {
       toolBar: {
         title: 'MyApp',
-        svgIcon: icon24,
+        toolbarSvgIcon: icon24,
         onClick: () => {
           miro.board.ui.openLibrary('content.html', {title: 'MyApp'})
         },
